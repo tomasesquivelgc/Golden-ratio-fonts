@@ -7,7 +7,12 @@ export default {
   theme: {
     extend: {
       width: {
-        'gr': '61.8%',
+        'grb': '61.8%',
+        'grs': '38.2%',
+      },
+      height: {
+        'grb': '61.8%',
+        'grs': '38.2%',
       }
     },
   },
