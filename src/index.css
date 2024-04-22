@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-img {
+  background-image: url('brushed-alum.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+
+.bg-gradient {
+  position: relative;
+}
+
+.bg-gradient::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 214, 10, 0.5), rgba(255, 195, 0, 0.5));
+}
