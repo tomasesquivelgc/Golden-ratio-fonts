@@ -8,16 +8,23 @@ function Calculator () {
   const [calculatedNumbers, setCalculatedNumbers] = useState([]);
 
   const calculateFonts = (input) => {
-    const numbers = [];
-    let currentNumber = input;
-
-    for(let i = 0; i < 5; i++){
-      currentNumber /= 1.618;
-      numbers.push(parseFloat(currentNumber.toFixed(2)));
+    if (!isNaN(input)) {
+      const numbers = [];
+      let currentNumber = input;
+  
+      for (let i = 0; i < 5; i++) {
+        currentNumber /= 1.618;
+        // Round the current number to two decimal places
+        numbers.push(parseFloat(currentNumber.toFixed(2)));
+      }
+      setCalculatedNumbers(numbers);
+      setBiggestNumber(input);
+    } else {
+      // If input is not a valid number, reset the calculated numbers and biggest number
+      setCalculatedNumbers([]);
+      setBiggestNumber(0);
     }
-    setCalculatedNumbers(numbers);
-    setBiggestNumber(input);
-  }
+  };
 
   return (
     <div className="w-full h-gr1 flex">
