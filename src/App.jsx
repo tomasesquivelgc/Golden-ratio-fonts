@@ -1,21 +1,28 @@
+import Navbar from "./components/Navbar";
+import Title from "./components/Title";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <>
       <section className=" h-screen w-full">
+        <Navbar />
 
-        <nav className="w-full h-gr5 bg-gradient" />
+        <Title />
 
-        <div className="w-full h-gr3 bg-oxfordBlue" />
-
+        {/* Main content*/}
         <div className="w-full h-gr1 flex">
           <div className="w-gr2 h-full">
+            {/* User Input */}
             <div className="w-full h-gr2 bg-gradient" />
+            {/* Calculated numbers */}
             <div className="w-full h-gr1 bg-mikadoYellow" />
           </div>
+          {/* Golden sized text */}
           <div className="w-gr1 h-full bg-white" />
         </div>
 
-        <div className="w-full h-gr6 bg-richBlack" />
+        <Footer />
 
       </section>
     </>
