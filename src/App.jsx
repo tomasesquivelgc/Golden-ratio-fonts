@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Title from "./components/Title";
 import Footer from "./components/Footer";
-import Calculator from "./components/Calculator";
+import Calculator from "./components/Calculator/Index";
 
 function App() {
   return (
