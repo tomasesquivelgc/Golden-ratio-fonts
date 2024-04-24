@@ -2,7 +2,8 @@ import PropTypes from 'prop-types';
 
 function FontList({ biggestNumber, calculatedNumbers }) {
   return (
-    <div className="w-gr1 h-full bg-white overflow-y-scroll">
+    <div className="w-gr1 h-full overflow-auto text-center border-l">
+      <h2>Font List</h2>
       <ul>
         <li style={{ fontSize: biggestNumber }}>
           Font Size

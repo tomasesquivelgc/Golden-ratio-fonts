@@ -30,7 +30,7 @@ export default {
       },
       colors: {
         gold: '#FFD60A',
-        mikadoYellow: '#FFC300',
+        mikadoYellow: '#CCA000',
         yaleBlue: '#003566',
         richBlack: '#000814',
         oxfordBlue: '#001D3D',
