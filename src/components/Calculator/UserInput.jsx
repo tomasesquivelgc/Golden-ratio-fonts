@@ -2,13 +2,12 @@ import PropTypes from 'prop-types';
 
 function UserInput({ calculateFonts }) {
   return (
-    <div className="w-full h-gr2 flex flex-col items-center border-b">
-      <h2 className="text-center">Enter your biggest font size</h2>
+    <div className="w-full h-gr2 flex flex-col items-center border-b text-center">
+      <h2 className="text-gr3 md:text-gr2 h-gr1 w-gr1">Biggest</h2>
       <input
         type="number"
         onChange={(e) => calculateFonts(parseInt(e.target.value, 10))}
-        placeholder="Enter your biggest font size"
-        className="p-2 w-1/2 text-black"
+        className=" w-gr4 text-black m-2"
       />
     </div>
   );
