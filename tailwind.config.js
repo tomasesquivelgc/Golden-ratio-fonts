@@ -10,7 +10,7 @@ export default {
       gr2: '2.47rem',
       gr3: '1.53rem',
       gr4: '0.94rem',
-      gr5: '1.02vw'
+      gr5: '1.02vw',
     },
     extend: {
       width: {
