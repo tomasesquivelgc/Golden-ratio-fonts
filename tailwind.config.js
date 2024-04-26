@@ -5,6 +5,13 @@ export default {
     './src/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    fontSize: {
+      gr1: '4.5rem',
+      gr2: '2.47rem',
+      gr3: '1.53rem',
+      gr4: '0.94rem',
+      gr5: '1.02vw',
+    },
     extend: {
       width: {
         gr1: '61.8%',
@@ -30,13 +37,10 @@ export default {
       },
       colors: {
         gold: '#FFD60A',
-        mikadoYellow: '#FFC300',
+        mikadoYellow: '#CCA000',
         yaleBlue: '#003566',
         richBlack: '#000814',
         oxfordBlue: '#001D3D',
-      },
-      backgroundImage: {
-        metalTexture: 'url(public/metal-texture.png)',
       },
     },
   },

@@ -12,7 +12,7 @@ function Calculator() {
       const numbers = [];
       let currentNumber = input;
 
-      for (let i = 0; i < 5; i += 1) {
+      for (let i = 0; i < 4; i += 1) {
         currentNumber /= 1.618;
         // Round the current number to two decimal places
         numbers.push(parseFloat(currentNumber.toFixed(2)));
@@ -27,7 +27,7 @@ function Calculator() {
   };
 
   return (
-    <div className="w-full h-gr1 flex">
+    <div className="w-full h-gr1 flex text-white p-2">
       <div className="w-gr2 h-full">
         <UserInput calculateFonts={calculateFonts} />
         <NumberList calculatedNumbers={calculatedNumbers} />
