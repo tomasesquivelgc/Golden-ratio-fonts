@@ -1,9 +1,15 @@
 import PropTypes from 'prop-types';
+import { FaExchangeAlt } from "react-icons/fa";
 
-function UserInput({ calculateFonts, setUnits }) {
+function UserInput({ calculateFonts, setUnits, setIsSmall, isSmall }) {
   return (
     <div className="w-full h-gr2 flex flex-col items-center border-b text-center">
-      <h2 className="text-gr3 md:text-gr2 h-gr1 w-gr1">Biggest</h2>
+      <h2 className="text-gr3 md:text-gr2">
+        {isSmall ? 'Smallest' : 'Biggest'}
+      </h2>
+      <button onClick={() => setIsSmall(!isSmall)}>
+        <FaExchangeAlt size={24} />
+      </button>
       <div className='flex justify-center'>
         <input
         type="number"
