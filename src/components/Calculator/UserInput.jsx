@@ -6,7 +6,7 @@ function UserInput({
 }) {
   return (
     <div className="w-full h-gr2 flex flex-col items-center border-b text-center">
-      <h2 className="text-gr3 md:text-gr2">
+      <h2 className="text-gr3 md:text-gr2 border-b p-0 m-1">
         {isSmall ? 'Smallest' : 'Biggest'}
       </h2>
       <button type="button" onClick={() => setIsSmall(!isSmall)} aria-label="Toggle direction">
@@ -15,7 +15,7 @@ function UserInput({
       <div className="flex justify-center">
         <input
           type="number"
-          onChange={(e) => calculateFonts(parseInt(e.target.value, 10))}
+          onChange={(e) => calculateFonts(parseFloat(e.target.value, 10))}
           className=" w-1/2 text-black m-2"
         />
         <select
