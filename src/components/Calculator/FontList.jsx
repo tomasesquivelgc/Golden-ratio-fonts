@@ -29,4 +29,5 @@ export default FontList;
 FontList.propTypes = {
   biggestNumber: PropTypes.number.isRequired,
   calculatedNumbers: PropTypes.arrayOf(PropTypes.number).isRequired,
+  units: PropTypes.string.isRequired,
 };

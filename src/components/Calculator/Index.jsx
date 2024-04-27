@@ -15,9 +15,9 @@ function Calculator() {
       let currentNumber = input;
 
       for (let i = 0; i < 4; i += 1) {
-        if(isSmall) {
+        if (isSmall) {
           currentNumber *= 1.618;
-        }else{
+        } else {
           currentNumber /= 1.618;
         }
         // Round the current number to two decimal places
@@ -35,7 +35,12 @@ function Calculator() {
   return (
     <div className="w-full h-gr1 flex text-white p-2">
       <div className="w-gr2 h-full">
-        <UserInput calculateFonts={calculateFonts} setUnits={setUnits} setIsSmall={setIsSmall} isSmall={isSmall} />
+        <UserInput
+          calculateFonts={calculateFonts}
+          setUnits={setUnits}
+          setIsSmall={setIsSmall}
+          isSmall={isSmall}
+        />
         <NumberList calculatedNumbers={calculatedNumbers} />
       </div>
       {/* Golden sized text */}
