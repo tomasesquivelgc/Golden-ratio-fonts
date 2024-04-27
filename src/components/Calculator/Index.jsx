@@ -6,6 +6,8 @@ import FontList from './FontList';
 function Calculator() {
   const [biggestNumber, setBiggestNumber] = useState(0);
   const [calculatedNumbers, setCalculatedNumbers] = useState([]);
+  const [units, setUnits] = useState('px');
+  const [isSmall, setIsSmall] = useState(false);
 
   const calculateFonts = (input) => {
     if (!Number.isNaN(input)) {
@@ -13,7 +15,11 @@ function Calculator() {
       let currentNumber = input;
 
       for (let i = 0; i < 4; i += 1) {
-        currentNumber /= 1.618;
+        if (isSmall) {
+          currentNumber *= 1.618;
+        } else {
+          currentNumber /= 1.618;
+        }
         // Round the current number to two decimal places
         numbers.push(parseFloat(currentNumber.toFixed(2)));
       }
@@ -29,11 +35,16 @@ function Calculator() {
   return (
     <div className="w-full h-gr1 flex text-white p-2">
       <div className="w-gr2 h-full">
-        <UserInput calculateFonts={calculateFonts} />
+        <UserInput
+          calculateFonts={calculateFonts}
+          setUnits={setUnits}
+          setIsSmall={setIsSmall}
+          isSmall={isSmall}
+        />
         <NumberList calculatedNumbers={calculatedNumbers} />
       </div>
       {/* Golden sized text */}
-      <FontList biggestNumber={biggestNumber} calculatedNumbers={calculatedNumbers} />
+      <FontList biggestNumber={biggestNumber} calculatedNumbers={calculatedNumbers} units={units} />
     </div>
   );
 }
