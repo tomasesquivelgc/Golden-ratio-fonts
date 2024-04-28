@@ -33,7 +33,7 @@ function Calculator() {
   };
 
   return (
-    <div id="calculator" className="w-full h-gr1 flex text-white p-2">
+    <div id="calculator" className="w-full h-gr1 flex text-white">
       <div className="w-gr2 h-full">
         <UserInput
           calculateFonts={calculateFonts}

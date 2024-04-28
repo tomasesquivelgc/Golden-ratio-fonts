@@ -15,7 +15,7 @@ function Navbar(){
     document.getElementById("contact").style.display = "flex";
   }
   return(
-    <nav className="w-full h-gr5 flex justify-center">
+    <nav className="w-full h-gr5 flex justify-center text-gr4">
       <ul className="flex text-white gap-10 p-2">
         <li><button onClick={() => handleAbout()}>About</button></li>
         <li><button onClick={() => handleCalculator()}>Calculator</button></li>
