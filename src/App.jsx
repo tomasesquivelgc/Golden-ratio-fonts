@@ -2,6 +2,8 @@ import Navbar from './components/Navbar';
 import Title from './components/Title';
 import Footer from './components/Footer';
 import Calculator from './components/Calculator/Index';
+import About from './components/About/Index';
+import Contact from './components/Contact/Index';
 
 function App() {
   return (
@@ -9,6 +11,8 @@ function App() {
       <Navbar />
       <Title />
       <Calculator />
+      <About />
+      <Contact />
       <Footer />
     </section>
   );
