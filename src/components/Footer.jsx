@@ -3,7 +3,7 @@ const Footer = () => (
     <p>Tomás Esquivel</p>
     <p>2024</p>
     <p>tomasesquivel@yahoo.com</p>
-    
+
   </div>
 );
 
