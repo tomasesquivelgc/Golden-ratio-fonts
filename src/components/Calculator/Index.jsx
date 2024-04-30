@@ -33,7 +33,7 @@ function Calculator() {
   };
 
   return (
-    <div id="calculator" className="w-full h-gr1 flex text-white">
+    <section id="calculator" className="w-full h-gr1 flex text-white">
       <div className="w-gr2 h-full">
         <UserInput
           calculateFonts={calculateFonts}
@@ -45,7 +45,7 @@ function Calculator() {
       </div>
       {/* Golden sized text */}
       <FontList biggestNumber={biggestNumber} calculatedNumbers={calculatedNumbers} units={units} />
-    </div>
+    </section>
   );
 }
 

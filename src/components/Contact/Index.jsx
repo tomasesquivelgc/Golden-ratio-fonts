@@ -2,7 +2,7 @@ import LinksList from './LinksList';
 
 function Contact() {
   return (
-    <div id="contact" className="hidden w-full h-gr1 justify-center items-center text-white text-center">
+    <section id="contact" className="hidden w-full h-gr1 justify-center items-center text-white text-center">
       <div className="flex w-gr2 h-full flex-col items-center">
         <h2 className="text-gr3 md:text-gr2 border-b p-0 m-1 max-w-fit">Contact</h2>
         <p className="text-gr4 md:text-gr3 overflow-y-auto p-2">
@@ -15,7 +15,7 @@ function Contact() {
         <h2 className="text-gr3 md:text-gr2 border-b p-0 m-1 max-w-fit">My socials</h2>
         <LinksList />
       </div>
-    </div>
+    </section>
   );
 }
 
